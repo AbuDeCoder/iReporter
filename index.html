@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iReporter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/globalstyles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/formpages.css" />
+    <script src="static/js/main.js"></script>
+</head>
+<body>
+    <div class="body_wrapper">
+        <div class="welcomebanner green">
+            <div class="logo_container">
+                <img class="img_log" src="static/images/logo.jpg" alt="logo"/>
+            </div>
+            <div class="banner_main">
+                <h2 class ="welcome_message">Welcome to iReporter</h2>
+            </div>
+        </div>
+        
+        <div class="content logincontent">
+            <div class="call_to_register">
+                <p class="info_1 text-centered" >With i-Reporter you can now report all corrupt and non performing officials, call for government intervention into alarming situations like bad roads etc.</p>
+                <hr class="horizontal-line">
+                <p class="info text-centered">Dont have an account click on the button below to create an account with i-Reporter and start reporting</p>
+                <form action="registration_page.html" method="post"><div class="reg-butt-container"><input type ="submit" name="submit"  value="CREATE ACCOUNT" class="register_button green"/></div></form>
+            </div>
+            
+            <div class="call_to_signin">
+
+                <h2 class="text-centered">Already a member sign in</h2>
+                <hr class="horizontal-line">
+                <div class="login-form-container">
+                    <form action="" method ="post" class="form">
+                        <label class="form_control" role="username_label">
+                            <span class="form-para-label">Username<span class="red"> *</span></span>
+                            <input type ="text" class="text_control" name ="username" autofocus pattern="[A-Za-z]{5,15}" title="A valid username should comprise between 5-15 alphabetical letters" placeholder="Username" aria-required="true" required/>
+                        </label>
+                        <label class="form_control" role="password label">
+                                <span class="form-para-label">Password<span class="red"> *</span></span>
+                                <input type ="password" class="text_control" name ="password" aria-required="true" required  pattern="[A-Za-z]{6,15}" title="A valid password should comprise between 6-15 characters"/>
+                        </label>
+                        <div class="form_control form-controls-container">
+                            <input type="submit" class="primary-button submit-button" value ="Sign in" name ="submit"/>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="green fixed-bottom">
+        <p class="footer-para text-centered">Andela - bootcamp cohort 15 <span class="red">All rights reserved</span></p>
+    </footer>
+</body>
+</html>
