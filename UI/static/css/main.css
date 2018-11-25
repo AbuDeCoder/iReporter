@@ -10,9 +10,13 @@
 }
 
 .main-nav{
-    grid-area: nav;   
+    grid-area: main-nav; 
+    margin:auto;  
 }
 
+
+align-content: center;
+    grid-area: main-nav; 
 
 .body_wrapper
 {
@@ -26,32 +30,45 @@
             "footer";
 }
 
+
+.banner_main{
+    display:flex;
+    align-content: center;
+    grid-area: banner_main;
+    color : yellow;
+    
+}
+
 .banner
 {
     display:grid;
     grid-gap: 10px;
     grid-template-columns:1fr;
-    height: 60px;
+    height: auto;
     padding:6px;
     grid-area: banner;
+    margin:auto;
 
     grid-template-areas: 
-          "logo_container"
+          "logo"
           "banner_main";
 }
 
 .big-banner
 {
+    grid-area: bigbanner;
+   
     display:grid;
-    grid-template-columns: 1fr;
     grid-gap: 10px;
+    
+    grid-template-columns: 1fr;
     height: auto;
     padding:6px;
-    grid-area: bigbanner;
     grid-template-areas: 
             "banner"
-            "nav";
+            "main-nav";
 }
+
 
 .content 
 {
@@ -60,61 +77,10 @@
     margin:10px auto 40px;
     display :grid;
     grid-template-columns: 1fr;
-    height:620px;
+    height:auto;
     
 }
 
-.logo_container
-{
-    padding:2px;
-    height:100%;
-    grid-area: logo_container;
-}
-
-
-.banner_main{
-    grid-column: 2;
-    grid-row: 1;
-    color : yellow;
-}
-
-.img_log{
-    width:80%;
-    height:80%;
-}
-
-
-
-  @media (min-width: 500px)
-  {
-    .body_wrapper 
-    {
-      display:grid;
-      grid-template-columns: 3fr 8fr;
-      grid-template-areas: 
-        "bigbanner bigbanner"
-          "sidebar content"
-           "footer footer";
-    }
-
-    .big-banner 
-    {
-        grid-template-columns: 3fr 1fr;
-        grid-template-areas: 
-          "banner  nav"
-    }
-
-    .banner {
-        grid-template-columns: 1fr 9fr;
-        grid-template-areas: 
-          "logo_container  banner_main"
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: space-around;
-    }
-  }
 
 
   .user-image-circular
@@ -159,3 +125,192 @@
     grid-template-columns: 7fr 1fr;
 }
 
+
+.specificrecord-full
+{
+    width: 90%;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns:1fr;
+
+}
+
+.title
+{
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+.icon{
+    width:100%;
+    height : auto;
+    display:flex;
+    align-content: center;
+}
+.recordtype{
+    width:80%;
+    height:80%;
+    margin:auto;
+}
+
+.record-videos,.record-images{
+    display:grid;
+    grid-gap : 15px;
+    grid-template-columns:1fr;
+    height:auto;
+
+}
+
+.specif-record-image-container{
+    display : flex;
+    align-content: center;
+    width : 100%;
+    height : 100%;
+}
+
+.specif-record-video-container{
+    display : grid;
+    grid-gap: 10px;
+    grid-template-columns:1fr;
+    
+}
+
+.specif-record-image{
+    width : 90%;
+    height : 90%;
+    margin :auto;
+}
+
+.actions
+{
+    display:grid;
+    grid-gap: 15px;
+    margin: 20px;
+    grid-template-columns:1fr;
+}
+
+
+@media (min-width: 500px)
+{
+  .body_wrapper 
+  {
+    display:grid;
+    grid-template-columns: 3fr 8fr;
+    grid-template-areas: 
+      "bigbanner bigbanner"
+        "sidebar content"
+         "footer footer";
+  }
+
+  .big-banner 
+  {
+      display:grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas: 
+        "banner  main-nav"
+  }
+
+    .login_container{
+       display:flex;
+       align-content: left; 
+    }
+    
+
+    .main-nav{
+        margin:0px;
+    }
+
+  .banner {
+      display:grid;
+      grid-template-columns: 1fr 12fr;
+      grid-template-areas: 
+        "logo  banner_main"
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .title
+  {
+      display:grid;
+      grid-template-columns:1fr  1fr 8fr;
+      height:auto;
+  }
+
+  .record-images
+  {
+        display:grid;
+        grid-gap : 20px;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        height:auto;
+    }
+
+
+    .record-videos
+    {
+        display:grid;
+        grid-gap : 20px;
+        grid-template-columns:1fr 1fr;
+        height:auto;
+    }
+
+
+    .image-heading{
+        grid-column: 1/5;
+    }
+
+    .video-heading{
+        grid-column: 1/3;
+    }
+
+
+    .actions
+    {
+        display:grid;
+        grid-gap: 20px;
+        grid-template-columns: 8fr 2fr;
+        margin: 30px;
+    }
+
+    .editButton
+    {
+      width:180px;
+      margin-left:auto;
+      margin-right: 0px;
+    }
+
+}
+
+.editButton
+{
+    color: #fff;
+    padding : 15px;
+    border-radius: 3px;
+
+}
+
+.DeleteButton{
+    color:white;
+    border :1px solid red;
+    border-radius: 3px;
+    padding:10px auto 10px;
+    height : 40px;
+}
+
+.specificrecord-full{
+    background-color: white;
+    border: 1px solid rgb(192, 187, 187);
+    padding : 20px;
+}
+
+.map{
+    height:300px;
+    width:100%;
+}
+
+.geolacationMap{
+    display :grid;
+    grid-template-columns:1fr;
+}

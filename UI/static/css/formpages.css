@@ -2,6 +2,8 @@
 {
     display: grid;
     width:100%;
+    margin:0px;
+    padding:0px;
     height:100%;
     grid-template-areas: 
             "welcomebanner"
@@ -30,16 +32,6 @@ footer{
             "welcomemessage";        
 }
 
-.logo_container{
-    display:flex;
-    padding:auto;
-    grid-column: 1;
-    grid-row: 1;
-    height:60px;
-    grid-area: logo;
-    align-content: center;
-}
-
 .welcome_message{
     text-align: center;
 }
@@ -49,12 +41,6 @@ footer{
     grid-row: 1;
     color : yellow;
     grid-area  :welcomemessage;
-}
-
-.img_log{
-    margin: 5% auto;
-    width:80px;
-    height:80%;
 }
 
 .content
@@ -159,13 +145,6 @@ footer{
     .welcomebanner{
         height:60px;
     }
-
-    .fixed-bottom{
-        position:fixed;
-        bottom:0;
-        left:0;
-        margin:20px 0px 0px 0px;
-    }
-
   }
 
+ 
