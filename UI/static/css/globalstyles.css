@@ -2,25 +2,32 @@ html
 {
     width:100%;
     height:100%;
-    margin:0px;
-    padding:0px;
+    margin:0px 0px 0px;
+    padding:0px 0px 0px;
 }
 
 body
 {
     height:100%;
     width:100%;
-    margin:0px;
-    padding:0px;
+    margin:0px 0px 0px;
+    padding:0px 0px 0px;
     background-color: #e9f3f2f6;
 }
+.blue-bg{
+    background-color: rgb(32, 19, 212);
 
-.green
+}
+.green-bg
 {
     background-color: rgb(40, 233, 127);
 }
 
-.red
+.red-bg
+{
+    background-color: rgb(255, 53, 53);
+}
+.red-color
 {
     color:rgb(255, 53, 53);
 }
@@ -99,6 +106,11 @@ nav>ul>li>a{
     font-size: 12pt;
 }
 
+.img_log{
+    margin: 5% auto;
+    width:80px;
+    height:80%;
+}
 
 .primary-button{
     background-color:rgb(76, 84, 190); 
@@ -117,4 +129,18 @@ nav>ul>li>a{
 .primary-button:hover{
     color :yellow;
     transition-delay : 1000ms;
+}
+
+.logo_container{
+    display:flex;
+    padding:auto;
+    height:60px;
+    grid-area: logo;
+    align-content: center;
+}
+.editButton:hover
+{
+    color: yellow;
+    background-color:#e68686;
+    transition-delay:1000ms;
 }
