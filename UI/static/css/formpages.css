@@ -17,26 +17,6 @@ footer{
     height: 50px;
 }
 
-
-.primary-button{
-    background-color:rgb(76, 84, 190); 
-    color :#ffffff;
-    border : 1px solid rgb(101, 103, 250);
-    margin-top:10px;
-    margin-left:auto;
-    margin-right:0px;
-    font-size: 12pt;
-    padding : 10px auto;
-    height:40px;
-    width : 120px;
-    border-radius : 7px;
-}
-
-.primary-button:hover{
-    color :yellow;
-    transition-delay : 1000ms;
-}
-
 .welcomebanner
 {
     display:grid;
@@ -77,37 +57,6 @@ footer{
     height:80%;
 }
 
-.login-form-container
-{
-    display:flex;
-    align-content: center;
-    background-color: rgb(240, 197, 234);
-    border: 2px solid  rgb(245, 176, 236);
-    height:auto;
-}
-
-
-.login-form-container>.form{
-    display: grid;
-    width:90%;
-    margin:30px auto;
-    grid-template-columns: 1f;
-    height : auto;
-
-}
-
-.form_control{
-    display:grid;
-    width:100%;
-}
-
-.form-controls-container
-{
-    display:flex;
-    align-content: end;
-    margin: 10px auto 0px;
-}
-
 .content
 {
     display:grid;
@@ -119,16 +68,6 @@ footer{
     grid-template-areas: 
             "call_to_register"
             "call_to_signin"; 
-}
-
-.call_to_register{
-    grid-area: call_to_register;
-}
-
-.call_to_signin
-{
-   grid-area:  call_to_signin;
-   padding: 10px auto;
 }
 
 .info_1{
@@ -173,10 +112,6 @@ footer{
     width: 90%;
 }
 
-.form-para-label{
-    margin: 8px 0px 4px;
-    font-size: 12pt;
-}
 
 @media (min-width: 500px)
   {

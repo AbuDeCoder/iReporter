@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>iReporter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css"  href="static/css/globalstyles.css" />
-    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
-    <link rel="stylesheet" type="text/css"  href="static/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/globalstyles.css" />
+    <link rel="stylesheet" type="text/css" media="screen"  href="static/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen"  href="static/font-awesome/css/font-awesome.min.css" />
     <script type="text/javascript" src="static/js/main.js"></script>
 </head>
 <body>
     
     <div class="body_wrapper">
         <div class="big-banner green">
-            <div class="banner">
+            <header class="banner">
                 <div class="logo_container">
                     <img class="img_log" src="static/images/logo.jpg" alt="logo"/>
                 </div>
                 <div class="banner_main">
                     <h3 class ="welcome_message">Welcome to iReporter</h3>
                 </div>
-            </div>
+            </header>
             <nav class="main-nav">
                 <ul>
                     <li><a href="">Nav 1</a></li>
@@ -88,7 +88,7 @@
                         </label>
 
                         <div class="form_control form-controls-container">
-                            <input type="submit" class="primary-button submit-button" value ="Report incident" name ="submit"/>
+                            <input type="submit" class="primary-button submit-button" id="submit" value ="Report incident" name ="submit"/>
                         </div>
                     </div>
                 </div>
@@ -102,6 +102,18 @@
         //To do 
         // javascript code to go here
         // for validation odf user in put and contacting back end using javascript and ajax requests
+            var inputElement = document.getElementById('submit');
+            inputElement.addEventListener('click', function(){
+                //we will have to do validation
+                // basic event driven programming(clicking the button)
+                // for now we just redirect to the new page;
+
+
+                // arguably it may appear to be better to use the js event onclick and asign the functionto execute in line
+                // but i feel i might have to contact the back end and do some tasks befor executing
+                redirect("profile.html");// function dfined in main.js
+            });
+        
     </script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 .side {
     width:90%;
-    margin:auto;
+    margin:10px auto;
+    height:620px;
     grid-area: sidebar;
 }
 
@@ -13,21 +14,36 @@
 }
 
 
+.body_wrapper
+{
+    display: grid;
+    width:100%;
+    height:auto;
+    grid-template-areas: 
+            "bigbanner"
+            "sidebar"
+            "content"
+            "footer";
+}
 
 .banner
 {
     display:grid;
     grid-gap: 10px;
-    grid-template-columns: 5% 95%;
+    grid-template-columns:1fr;
     height: 60px;
     padding:6px;
     grid-area: banner;
+
+    grid-template-areas: 
+          "logo_container"
+          "banner_main";
 }
 
 .big-banner
 {
     display:grid;
-    grid-template-columns: 1f;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
     height: auto;
     padding:6px;
@@ -41,7 +57,10 @@
 {
     grid-area: content;
     width:90%;
-    margin:10px auto;
+    margin:10px auto 40px;
+    display :grid;
+    grid-template-columns: 1fr;
+    height:620px;
     
 }
 
@@ -50,18 +69,6 @@
     padding:2px;
     height:100%;
     grid-area: logo_container;
-}
-
-.body_wrapper
-{
-    display: grid;
-    width:100%;
-    height:auto;
-    grid-template-areas: 
-            "bigbanner"
-            "sidebar"
-            "content"
-            "footer";
 }
 
 
@@ -82,8 +89,8 @@
   {
     .body_wrapper 
     {
-    display:grid;
-      grid-template-columns: 2f 8f;
+      display:grid;
+      grid-template-columns: 3fr 8fr;
       grid-template-areas: 
         "bigbanner bigbanner"
           "sidebar content"
@@ -108,3 +115,47 @@
       justify-content: space-around;
     }
   }
+
+
+  .user-image-circular
+{
+    width : 150px;
+    height :150px;
+    border : 1px solid #777373;
+    margin : 0px 0px;
+    border-radius: 50%;
+}
+
+.user-image-container{
+    width:150px;
+    height :150px;
+    margin : 30px auto;
+    padding :0px 0px;
+}
+
+.user_info
+{
+    width : 100%;
+    height : auto;
+    padding :0px 0px;
+    margin :0px 0px;
+}
+
+.user-details{
+    margin-left: 15px;
+}
+
+.white-color{
+ color : #fff;
+}
+
+.black-color{
+    color : #000;
+}
+
+.locationInput{
+    display :grid;
+    grid-gap: 15px;
+    grid-template-columns: 7fr 1fr;
+}
+
