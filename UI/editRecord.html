@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iReporter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/globalstyles.css" />
+    <link rel="stylesheet" type="text/css" media="screen"  href="static/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen"  href="static/font-awesome/css/font-awesome.min.css" />
+    <script type="text/javascript" src="static/js/main.js"></script>
+</head>
+<body>
+    
+    <div class="body_wrapper">
+        <div class="big-banner green">
+            <header class="banner">
+                <div class="logo_container">
+                    <img class="img_log" src="static/images/logo.jpg" alt="logo"/>
+                </div>
+                <div class="banner_main">
+                    <h3 class ="welcome_message">Welcome to iReporter</h3>
+                </div>
+            </header>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="">Nav 1</a></li>
+                    <li><a href="">Nav 2</a></li>
+                    <li><a href="">Nav 3</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="side">
+            
+                <div classs="user_info">
+                    <div class="user-image-container">
+                        <img class="user-image-circular" src ="static/images/logo.jpg" alt="profile picture"/>
+                    </div>
+                    <div class="text-left-aligned user-details">
+                        <p class="black-color"><span class="usersname fa fa-user"> JBaker</span></p>
+                        <p class="black-color"><span class="usersemail fa fa-envelope"> ssemugoomaabubaker@gmail.com</span></p>
+                        <p class="black-color"><span class="usersname fa fa-phone"> 0797261299</span></p>
+                    </div >
+                    <hr>
+                </div>
+        </div>
+        
+        <div class="content">
+                <h2 class="text-centered">Edit Rercord</h2>
+                <div class="login-form-container">
+
+                    <!--- same form as for new record but will have default values for the record-->
+                    <div class="form">
+                        <label class="form_control" role="firstNamelabel">
+                            <span class="form-para-label">Title<span class="red"> *</span></span>
+                            <input type ="text" class="text_control" name ="title" id="tittle" placeholder="Title" aria-required="true" required/>
+                        </label>
+                        <label class="form_control" role="descriptionlabel">
+                                <span class="form-para-label">Description<span class="red"> *</span></span>
+                                <textarea class="form_control" name ="description" id="description" placeholder="Write a brief explanation about the incident" aria-required="true" required cols="40" rows="4" class="form-control " ></textarea>
+                        </label>
+
+                        <label class="form_control" role="otherNameslabel">
+                                <span class="form-para-label">Type of incident</span>
+                                <select name="type" class="form-control">
+                                        <option value="">---</option>
+                                        <option value="redflag">red flag</option>
+                                        <option value="intervention">Interventiion</option>
+                                 </select>
+                        </label>
+
+                        <label class="form_control" role="locationlabel">
+                                <span class="form-para-label">Location<span class="red"> *</span></span>
+                                <div class="locationInput form_control">
+                                        <input type ="text" class="text_control" name ="location" id="location" placeholder="Lat Long cordinates" aria-required="true" required/>
+                                        <button class ="opengeoLocation">Find</button>
+                                </div>
+                                
+                        </label>
+
+                        <label class="form_control" role="imagesLabel">
+                                <span class="form-para-label">Image(s)</span>
+                                <input type ="file" class="text_control" name ="images" id="images" />
+                        </label>
+
+                        <label class="form_control" role="videosLabel">
+                                <span class="form-para-label">Video(s)</span>
+                                <input type ="file" class="text_control" name ="videos" id="videos"/>
+                        </label>
+
+                        <div class="form_control form-controls-container">
+                            <input type="submit" class="primary-button submit-button" id="submit" value ="Save" name ="submit"/>
+                        </div>
+                    </div>
+                </div>
+        </div> 
+        
+        <footer class="green normal-footer main-footer">
+                <p class="footer-para text-centered">Andela - bootcamp cohort 15 <span class="red">All rights reserved</span></p>
+        </footer>
+    </div>
+    <script>
+        //To do 
+        // javascript code to go here
+        // for validation odf user in put and contacting back end using javascript and ajax requests
+            var inputElement = document.getElementById('submit');
+            inputElement.addEventListener('click', function(){
+                //we will have to do validation
+                // basic event driven programming(clicking the button)
+                // for now we just redirect to the new page;
+
+
+                // arguably it may appear to be better to use the js event onclick and asign the functionto execute in line
+                // but i feel i might have to contact the back end and do some tasks befor executing
+                redirect("profile.html");// function dfined in main.js
+            });
+        
+    </script>
+</body>
+</html>
