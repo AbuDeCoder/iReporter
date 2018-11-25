@@ -1,20 +1,6 @@
-html
-{
-    width:100%;
-    height:100%;
-    margin:0px;
-    padding:0px;
-}
-
-body
-{
-    height:100%;
-    width:100%;
-    margin:0px;
-    padding:0px;
-}
-
 .side {
+    width:90%;
+    margin:auto;
     grid-area: sidebar;
 }
 
@@ -28,12 +14,12 @@ body
 
 
 
-.banner{
+.banner
+{
     display:grid;
     grid-gap: 10px;
     grid-template-columns: 5% 95%;
-    height: 50px;
-    background-color: rgb(7, 21, 207);
+    height: 60px;
     padding:6px;
     grid-area: banner;
 }
@@ -41,9 +27,9 @@ body
 .big-banner
 {
     display:grid;
+    grid-template-columns: 1f;
     grid-gap: 10px;
     height: auto;
-    background-color: rgb(7, 21, 207);
     padding:6px;
     grid-area: bigbanner;
     grid-template-areas: 
@@ -51,27 +37,19 @@ body
             "nav";
 }
 
-
-.main-content{
-    grid-area: main-content;
-    margin:10px auto;
-    
-}
 .content 
 {
     grid-area: content;
+    width:90%;
     margin:10px auto;
+    
 }
 
-.logo_container{
+.logo_container
+{
     padding:2px;
-    grid-column: 1;
-    grid-row: 1;
     height:100%;
-}
-
-.welcomebanner>.logo_container{
-    height:60px;
+    grid-area: logo_container;
 }
 
 .body_wrapper
@@ -82,7 +60,7 @@ body
     grid-template-areas: 
             "bigbanner"
             "sidebar"
-            "main-content"
+            "content"
             "footer";
 }
 
@@ -102,12 +80,27 @@ body
 
   @media (min-width: 500px)
   {
-    .body_wrapper {
-      grid-template-columns: 4f 6f;
+    .body_wrapper 
+    {
+    display:grid;
+      grid-template-columns: 2f 8f;
       grid-template-areas: 
-        "bigbanner  bigbanner"
-        "sidebar  content"
-        "footer  footer";
+        "bigbanner bigbanner"
+          "sidebar content"
+           "footer footer";
+    }
+
+    .big-banner 
+    {
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: 
+          "banner  nav"
+    }
+
+    .banner {
+        grid-template-columns: 1fr 9fr;
+        grid-template-areas: 
+          "logo_container  banner_main"
     }
 
     nav ul {
@@ -115,15 +108,3 @@ body
       justify-content: space-around;
     }
   }
-
-
-  
-  @media (min-width: 500px)
-  {
-    .big-banner {
-      grid-template-columns: 3fr 1fr;
-      grid-template-areas: 
-        "banner  nav"
-    }
-  }
-
