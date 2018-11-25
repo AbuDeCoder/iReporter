@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iReporter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/globalstyles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/formpages.css" />
+    <script src="static/js/main.js"></script>
+</head>
+<body>
+    <div class="body_wrapper">
+        <div class="welcomebanner green">
+            <div class="logo_container">
+                <img class="img_log" src="static/images/logo.jpg" alt="logo"/>
+            </div>
+            <div class="banner_main">
+                <h2 class ="welcome_message">iReporter</h2>
+            </div>
+        </div>
+        <div class="content normal-content">
+            <div class="call_to_register">
+                <p class="info_1 text-centered">With i-Reporter you can now report all corrupt and non performing officials, call for government intervention into alarming situations like bad roads etc.</p>
+                <hr class="horizontal-line">
+                <p class="info text-centered">Already a member ? Click on the button below to sign in to your account with i-Reporter and start reporting</p>
+                <form action="profile.html" method="get"><div class="reg-butt-container"><input type ="submit" name="submit"  value="SIGN IN" class="register_button green"/></div></form>
+            </div>
+            
+            <div class="call_to_signin">
+
+                <h2 class="text-centered">New to i-Reporter ? Sign up</h2>
+                <hr class="horizontal-line">
+                <div class="login-form-container">
+                    <div class="form">
+                        <label class="form_control" role="firstNamelabel">
+                            <span class="form-para-label">First name<span class="red"> *</span></span>
+                            <input type ="text" class="text_control" name ="firstName" id="firstName" placeholder="First name" aria-required="true" required/>
+                        </label>
+                        <label class="form_control" role="LastNamelabel">
+                                <span class="form-para-label">Last name<span class="red"> *</span></span>
+                                <input type ="text" class="text_control" name ="lastName" id="lastName" placeholder="Last name" aria-required="true" required/>
+                        </label>
+
+                        <label class="form_control" role="otherNameslabel">
+                                <span class="form-para-label">Other names</span>
+                                <input type ="text" class="text_control" name ="otherNames" id="otherNames" placeholder="Last name" aria-required="false"/>
+                        </label>
+
+                        <label class="form_control" role="emaillabel">
+                                <span class="form-para-label">Email<span class="red"> *</span></span>
+                                <input type ="text" class="text_control" name ="email" id="email" placeholder="example@domain.com" aria-required="true" required/>
+                        </label>
+
+                        <label class="form_control" role="otherNameslabel">
+                                <span class="form-para-label">Telephone<span class="red">*</span></span>
+                                <input type ="phone" class="text_control" name ="phone" id="phone" aria-required="true" required/>
+                        </label>
+
+                        <label class="form_control" role="usernamelabel">
+                                <span class="form-para-label">Prefered Username<span class="red">*</span></span>
+                                <input type ="text" class="text_control" name ="username" id="username" aria-required="true" required/>
+                        </label>
+
+
+                        <label class="form_control" role="password label">
+                                <span class="form-para-label">Password<span class="red"> *</span></span>
+                                <input type ="password" class="text_control" name ="password" aria-required="true" required/>
+                        </label>
+                        
+                        <label class="form_control" role="confirmpasswordlabel">
+                                <span class="form-para-label">Confirm Password<span class="red"> *</span></span>
+                                <input type ="password" class="text_control" name ="confirmpassword" id="confirmpassword" aria-required="true" required/>
+                        </label>
+                        
+                        <div class="form_control form-controls-container">
+                            <input type="submit" class="primary-button submit-button" value ="Sign up" name ="submit"/>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <footer class="green normal-footer">
+            <p class="footer-para text-centered">Andela - bootcamp cohort 15 <span class="red">All rights reserved</span></p>
+        </footer>
+    </div>
+</body>
+</html>
