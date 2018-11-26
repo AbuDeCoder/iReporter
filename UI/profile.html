@@ -47,51 +47,31 @@
         </div>
         
         <div class="content">
-                <h2 class="text-centered">Create New Rercord</h2>
-                <div class="login-form-container">
-                    <div class="form">
-                        <label class="form_control" role="firstNamelabel">
-                            <span class="form-para-label">Title<span class="red"> *</span></span>
-                            <input type ="text" class="text_control" name ="title" id="tittle" placeholder="Title" aria-required="true" required/>
-                        </label>
-                        <label class="form_control" role="descriptionlabel">
-                                <span class="form-para-label">Description<span class="red"> *</span></span>
-                                <textarea class="form_control" name ="description" id="description" placeholder="Write a brief explanation about the incident" aria-required="true" required cols="40" rows="4" class="form-control " ></textarea>
-                        </label>
+                <!-- content hers should be fetched and displayed dynamically in a list
+                    with js probably
+                below are just place holders fr two dummy records-->
 
-                        <label class="form_control" role="otherNameslabel">
-                                <span class="form-para-label">Type of incident</span>
-                                <select name="type" class="form-control">
-                                        <option value="">---</option>
-                                        <option value="redflag">red flag</option>
-                                        <option value="intervention">Interventiion</option>
-                                 </select>
-                        </label>
+                <div class="record-blow-up">
+                    <div class="uppper-blow-up">
+                            <div class="blow-up-record-type">
 
-                        <label class="form_control" role="locationlabel">
-                                <span class="form-para-label">Location<span class="red"> *</span></span>
-                                <div class="locationInput form_control">
-                                        <input type ="text" class="text_control" name ="location" id="location" placeholder="Lat Long cordinates" aria-required="true" required/>
-                                        <button class ="opengeoLocation">Find</button>
-                                </div>
-                                
-                        </label>
-
-                        <label class="form_control" role="imagesLabel">
-                                <span class="form-para-label">Image(s)</span>
-                                <input type ="file" class="text_control" name ="images" id="images" />
-                        </label>
-
-                        <label class="form_control" role="videosLabel">
-                                <span class="form-para-label">Video(s)</span>
-                                <input type ="file" class="text_control" name ="videos" id="videos"/>
-                        </label>
-
-                        <div class="form_control form-controls-container">
-                            <input type="submit" class="primary-button submit-button" value ="Report incident" name ="submit"/>
-                        </div>
+                            </div>
+        
+                            <div class="blow-up-record-type">
+        
+                            </div>
                     </div>
+                    <div class="description">
+
+                    </div>
+                    <div class="blow-up-actions">
+                        <a href="Specificrecord.html" class="editButton">Read More >></a>
+                        <a href="editRecord.html" class="editButton">Edit >></a>
+                        <button class="DeleteButton">Delete</button>
+                    </div>
+                    
                 </div>
+
         </div> 
         
         <footer class="green normal-footer main-footer">
