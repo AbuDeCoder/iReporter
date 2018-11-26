@@ -13,13 +13,13 @@
 <body>
     
     <div class="body_wrapper">
-        <div class="big-banner green">
+        <div class="big-banner green-bg">
             <div class="banner">
                 <div class="logo_container">
                     <img class="img_log" src="static/images/logo.jpg" alt="logo"/>
                 </div>
                 <div class="banner_main">
-                    <h3 class ="welcome_message">Welcome to iReporter</h3>
+                    <h3 class ="welcome_message">iReporter</h3>
                 </div>
             </div>
             <nav class="main-nav">
@@ -42,39 +42,130 @@
                         <p class="black-color"><span class="usersemail fa fa-envelope"> ssemugoomaabubaker@gmail.com</span></p>
                         <p class="black-color"><span class="usersname fa fa-phone"> 0797261299</span></p>
                     </div >
-                    <hr>
+                    <hr class ="horizontal-line">
+
+                    <div class="mathematics">
+                        <p><span class="fa fa-square  resolved-color"></span> Red Flags resolved <span class="number">50</span></p> 
+                        <p><span class="fa fa-square  resolved-color"></span> Intervention calls resolved <span class="number">50</span></p> 
+                        
+                        <p><span class="fa fa-square  under-investigation-color"></span> Red Flags under investigation <span class="number">50</span></p> 
+                        <p><span class="fa fa-square  under-investigation-color"></span> Intervention calls under investigation <span class="number">50</span></p> 
+
+                        <p><span class="fa fa-square  rejected-color"></span> Red Flags rejected <span class="number">50</span></p> 
+                        <p><span class="fa fa-square  rejected-color"></span> Intervention calls rejected <span class="number">50</span></p> 
+                   
+                   </div>
                 </div>
         </div>
         
         <div class="content">
-                <!-- content hers should be fetched and displayed dynamically in a list
+            <div class="specificrecord-full with-shadow">
+                <!-- content here should be fetched and displayed dynamically in a list
                     with js probably
                 below are just place holders fr two dummy records-->
-
+                <h2 class="list_header">All your red-flag/intervention records</h2>
+                <hr class="horizontal-line">
+                
                 <div class="record-blow-up">
                     <div class="uppper-blow-up">
-                            <div class="blow-up-record-type">
 
-                            </div>
-        
                             <div class="blow-up-record-type">
+                                <img class="recordtype" src="static/images/logo.jpg" alt="image to depict type of incident"/>
+                            </div>
+                            
+                            <div class="status-color rejected">
         
+                            </div>
+
+                            <div class="title-content">
+                                    <h3 class="record-header">Title here</h3>
                             </div>
                     </div>
-                    <div class="description">
+
+                    <div class="description-para">
+                            At Andela. We know that effective communication is required for use to succeed so we
+                            are willing to ask questions, seek and request feedback, write professionally, read to
+                            understand what message is being passed and speak to be understood.
 
                     </div>
                     <div class="blow-up-actions">
-                        <a href="Specificrecord.html" class="editButton">Read More >></a>
-                        <a href="editRecord.html" class="editButton">Edit >></a>
-                        <button class="DeleteButton">Delete</button>
+                        <a href="Specificrecord.html" class="editButton blue-bg">More >></a>
+                        <a href="editRecord.html" class="editButton blue-bg">Edit >></a>
+                        <button class="DeleteButton red-bg">Delete</button>
                     </div>
                     
                 </div>
+                
+                <hr class="horizontal-line">
+                
+                <div class="record-blow-up">
+                        <div class="uppper-blow-up">
+    
+                                <div class="blow-up-record-type">
+                                    <img class="recordtype" src="static/images/logo.jpg" alt="image to depict type of incident"/>
+                                </div>
+                                
+                                <div class="status-color resolved">
+            
+                                </div>
+    
+                                <div class="title-content">
+                                        <h3 class="record-header">Title here</h3>
+                                </div>
+                        </div>
+    
+                        <div class="description-para">
+                                At Andela. We know that effective communication is required for use to succeed so we
+                                are willing to ask questions, seek and request feedback, write professionally, read to
+                                understand what message is being passed and speak to be understood.
+    
+                        </div>
+                        <div class="blow-up-actions">
+                            <a href="Specificrecord.html" class="editButton blue-bg">More >></a>
+                            <a href="editRecord.html" class="editButton blue-bg">Edit >></a>
+                            <button class="DeleteButton red-bg">Delete</button>
+                        </div>
+                        
+                    </div>
+
+                    <hr class="horizontal-line">
+                
+                <div class="record-blow-up">
+                        <div class="uppper-blow-up">
+    
+                                <div class="blow-up-record-type">
+                                    <img class="recordtype" src="static/images/logo.jpg" alt="image to depict type of incident"/>
+                                </div>
+                                
+                                <div class="status-color under-investigation">
+            
+                                </div>
+    
+                                <div class="title-content">
+                                        <h3 class="record-header">Title here</h3>
+                                </div>
+                        </div>
+    
+                        <div class="description-para">
+                                At Andela. We know that effective communication is required for use to succeed so we
+                                are willing to ask questions, seek and request feedback, write professionally, read to
+                                understand what message is being passed and speak to be understood.
+    
+                        </div>
+                        <div class="blow-up-actions">
+                            <a href="Specificrecord.html" class="editButton blue-bg">More >></a>
+                            <a href="editRecord.html" class="editButton blue-bg">Edit >></a>
+                            <button class="DeleteButton red-bg">Delete</button>
+                        </div>
+                        
+                    </div>
+
+            </div>
+                
 
         </div> 
         
-        <footer class="green normal-footer main-footer">
+        <footer class="green-bg normal-footer main-footer">
                 <p class="footer-para text-centered">Andela - bootcamp cohort 15 <span class="red">All rights reserved</span></p>
         </footer>
     </div>

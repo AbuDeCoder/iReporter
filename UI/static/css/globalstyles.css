@@ -18,9 +18,15 @@ body
     background-color: rgb(32, 19, 212);
 
 }
+
 .green-bg
 {
-    background-color:rgb(31, 209, 111);
+    background-color:#9055A2;
+}
+
+.green-color
+{
+    color:rgb(70, 192, 100);
 }
 
 .red-bg
@@ -39,11 +45,16 @@ body
 .text_control,select{
     border :1px solid #998d8de8;
     border-radius: 2px;
-    padding:5px;
+    padding:7px;
     background-color: #fff;
     height:25px;
+    
+
 }
 
+.text_control,select,textarea{
+    font-size: 12pt;
+}
 select{
     border :1px solid #998d8de8;
     border-radius: 2px;
@@ -102,8 +113,8 @@ nav>ul>li>a{
 }
 
 .form-para-label{
-    margin: 8px 0px 4px;
-    font-size: 12pt;
+    margin: 10px 0px 5px;
+    font-size: 14pt;
 }
 
 .img_log{
@@ -143,4 +154,19 @@ nav>ul>li>a{
     color: yellow;
     background-color:#e68686;
     transition-delay:1000ms;
+}
+
+.horizontal-line{
+    width: 100%;
+    margin:10px 0px 10px;
+}
+
+.list-header{
+ height : 20pt;
+ margin:10px;
+}
+
+.with-shadow {
+    -webkit-box-shadow: 0px 10px 20px rgba(109, 109, 109, 0.16) !important;
+    box-shadow: 0px 10px 20px rgba(109, 109, 109, 0.16) !important;
 }

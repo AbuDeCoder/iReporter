@@ -94,10 +94,6 @@ footer{
     transition-property: background-color, border;
 }
 
-.horizontal-line{
-    width: 90%;
-}
-
 
 @media (min-width: 500px)
   {
@@ -145,6 +141,10 @@ footer{
     .welcomebanner{
         height:60px;
     }
+    #index-form
+    {
+    margin-bottom : 100px;
+    }
   }
 
- 
+

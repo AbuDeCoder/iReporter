@@ -14,10 +14,6 @@
     margin:auto;  
 }
 
-
-align-content: center;
-    grid-area: main-nav; 
-
 .body_wrapper
 {
     display: grid;
@@ -138,19 +134,17 @@ align-content: center;
 .title
 {
     display:grid;
-    grid-template-columns:1fr;
-}
-
-.icon{
-    width:100%;
-    height : auto;
-    display:flex;
-    align-content: center;
+    grid-template-columns:1fr 1fr;
 }
 .recordtype{
     width:80%;
     height:80%;
     margin:auto;
+}
+.status-color{
+    width:80%;
+    height:80%;
+    margin:0px;
 }
 
 .record-videos,.record-images{
@@ -190,6 +184,47 @@ align-content: center;
 }
 
 
+.record-blow-up
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap : 10px;
+}
+
+.uppper-blow-up
+{
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr 1fr 6fr;
+
+}
+
+nav > a{
+    margin-left:20px;
+}
+
+.rejected-color{
+    color:#df3846;
+}
+
+.resolved-color{
+    color:#53df38;
+}
+.under-investigation-color{
+    color:#75115c;
+}
+
+.rejected{
+    background-color:#df3846;
+}
+
+.resolved{
+    background-color:#53df38;
+}
+.under-investigation{
+    background-color:#75115c;
+}
+
 @media (min-width: 500px)
 {
   .body_wrapper 
@@ -216,9 +251,6 @@ align-content: center;
     }
     
 
-    .main-nav{
-        margin:0px;
-    }
 
   .banner {
       display:grid;
@@ -227,11 +259,13 @@ align-content: center;
         "logo  banner_main"
   }
 
-  nav ul {
-    display: flex;
-    justify-content: space-around;
+  .main-nav {
+    display:grid;
+    grid-gap:2px;
+    grid-template-columns:1fr  1fr 1fr;
   }
 
+  
   .title
   {
       display:grid;
@@ -276,19 +310,28 @@ align-content: center;
 
     .editButton
     {
-      width:180px;
+      width:auto;
       margin-left:auto;
       margin-right: 0px;
+    }
+
+
+    .uppper-blow-up
+    {
+        display:grid;
+        grid-gap:10px;
+        grid-template-columns: 1fr 1fr 15fr;
+
     }
 
 }
 
 .editButton
 {
+    
     color: #fff;
     padding : 15px;
     border-radius: 3px;
-
 }
 
 .DeleteButton{
@@ -296,7 +339,8 @@ align-content: center;
     border :1px solid red;
     border-radius: 3px;
     padding:10px auto 10px;
-    height : 40px;
+    width:80px;
+    height : 50px;
 }
 
 .specificrecord-full{
@@ -314,3 +358,33 @@ align-content: center;
     display :grid;
     grid-template-columns:1fr;
 }
+
+
+.specif-record-image 
+{
+    opacity: 0.8;
+    transform: scale(1);
+    transition: opacity 0.35s ease 0s, transform 1s ease 0s;
+    width: 100%;
+}
+
+.specif-record-image-container:hover img 
+{
+  opacity: 0.4;
+  transform: scale(0.8);
+  transition: opacity 0.35s ease 0s, transform 1s ease 0s;
+}
+
+.product-img-container-text {
+  bottom: 60px;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.description-para{
+    font-size: 13pt;
+    line-height: 21pt;
+}
+
